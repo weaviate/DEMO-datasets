@@ -9,7 +9,7 @@ services:
     - '8080'
     - --scheme
     - http
-    image: semitechnologies/weaviate:1.0.0
+    image: semitechnologies/weaviate:1.0.2
     ports:
     - 8080:8080
     restart: on-failure:0
@@ -30,7 +30,7 @@ services:
     ports:
     - 9999:9999
   newspublications:
-    image: semitechnologies/weaviate-demo-newspublications:0.23.2
+    image: semitechnologies/weaviate-demo-newspublications
     environment:
     - weaviate_host=http://weaviate.com:8080
     depends_on:
