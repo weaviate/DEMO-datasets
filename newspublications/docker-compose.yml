@@ -21,7 +21,7 @@ services:
       DEFAULT_VECTORIZER_MODULE: 'text2vec-transformers'
       ENABLE_MODULES: 'text2vec-transformers'
   t2v-transformers:
-    image: semitechnologies/transformers-inference:sentence-transformers-msmarco-distilroberta-base-v2
+    image: semitechnologies/transformers-inference:sentence-transformers-paraphrase-mpnet-base-v2
     environment:
       ENABLE_CUDA: '0'
   newspublications:
