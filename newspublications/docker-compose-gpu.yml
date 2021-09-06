@@ -44,11 +44,9 @@ services:
   newspublications:
     image: semitechnologies/weaviate-demo-newspublications
     environment:
-    - weaviate_host=http://weaviate.com:8080
+    - weaviate_host=http://weaviate:8080
     depends_on:
     - weaviate
     - t2v-transformers
     - qna-transformers
-    links:
-      - "weaviate:weaviate.com"
 ...

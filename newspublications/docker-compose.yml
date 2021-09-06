@@ -27,9 +27,7 @@ services:
   newspublications:
     image: semitechnologies/weaviate-demo-newspublications:latest
     environment:
-    - weaviate_host=http://weaviate.com:8080
+    - weaviate_host=http://weaviate:8080
     depends_on:
     - weaviate
-    links:
-      - "weaviate:weaviate.com"
 ...
